@@ -56,8 +56,8 @@ export const SingleProductPage = () => {
                 <span className="fw-bold">Category:</span> {categoryName}
               </p>
               <div className="card-pricing">
-                <p className="card-price">₹{price}</p>
-                <p className="card-price-cut">₹{price_old}</p>
+                <p className="card-price">ALL{price}</p>
+                <p className="card-price-cut">ALL{price_old}</p>
                 <p className="card-percent-discount">{discount}% off</p>
               </div>
               <div className="action-buttons-single-product flex">

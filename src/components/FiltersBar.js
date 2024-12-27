@@ -47,7 +47,7 @@ export const FiltersBar = () => {
           </p>
         </div>
         <div className="filter-title mg-top-sm">
-          <p className="para-md fw-bold">Price in ₹</p>
+          <p className="para-md fw-bold">Price in ALL</p>
         </div>
 
         <div className="filter-price flex">

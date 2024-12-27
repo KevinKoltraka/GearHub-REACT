@@ -93,28 +93,28 @@ export const CartPriceCard = () => {
         <hr />
         <div className="original-price price-item align-center mg-xsm fw-bold">
           <h4>Price ({cartState.cartItems.length} Items)</h4>
-          <p className="para-md">₹{totalOldPrice()}</p>
+          <p className="para-md">ALL{totalOldPrice()}</p>
         </div>
         <div className="discount-price price-item align-center mg-xsm fw-bold">
           <h4>Discount</h4>
-          <p className="para-md">- ₹{totalOldPrice() - totalPrice()}</p>
+          <p className="para-md">- ALL{totalOldPrice() - totalPrice()}</p>
         </div>
         <div className="delivery-charges price-item align-center mg-xsm fw-bold">
-          <h4>Delivery Charge</h4>
-          <p className="para-md">₹{deliveryCharge()}</p>
+          <h4>Tarifa e dorëzimit</h4>
+          <p className="para-md">ALL{deliveryCharge()}</p>
         </div>
         <hr />
         <div className="total-amount price-item flex align-center mg-xsm">
-          <h4>Total Amount</h4>
-          <p className="para-md">₹{totalPrice() + deliveryCharge()}</p>
+          <h4>Shuma Totale</h4>
+          <p className="para-md">ALL{totalPrice() + deliveryCharge()}</p>
         </div>
         <hr />
 
         <p className="note fw-bold mg-xsm">
-          You will save ₹{totalOldPrice() - totalPrice()} on this order
+          You will save ALL{totalOldPrice() - totalPrice()} on this order
         </p>
         <p className="note-free-delivery fw-bold mg-xsm">
-          FREE Home Delivery on orders above ₹500
+          Transporti FALAS në shtëpi për porositë mbi 500 lekë
         </p>
 
         {location.pathname == "/cart" ? (
@@ -122,14 +122,14 @@ export const CartPriceCard = () => {
             to="/checkout"
             className="btn btn-solid fw-bold btn-place-order align-center"
           >
-            PROCEED TO CHECKOUT
+            PROÇEDO ME CHECKOUTIN
           </Link>
         ) : (
           <a
             className="btn btn-solid fw-bold btn-place-order align-center btn-payment"
             onClick={handlePayment}
           >
-            PROCEED TO PAYMENT
+            PROÇEDO ME PAGESEN
           </a>
         )}
       </div>

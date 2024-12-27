@@ -1,83 +1,83 @@
 /**
- * Product Database can be added here.
- * You can add products of your wish with different attributes
+ * Baza e të dhënave të produkteve mund të shtohet këtu.
+ * Ju mund të shtoni produkte sipas dëshirës suaj me atribute të ndryshme
  * */
 
 export const products = [
   {
     _id: "I5c1bFwd",
-    title: "TrustBasket Organic Vermicompost Fertilizer Manure for Plants(5KG)",
-    imgUrl: "https://m.media-amazon.com/images/I/71iPA5LfB7L._AC_UL320_.jpg",
+    title: "TrustBasket Pleh organik Vermikompost për Bimë (5KG)",
+    imgUrl: "	https://m.media-amazon.com/images/I/71zxEAIaI7L._SL1500_.jpg",
     price: 332,
     price_old: 349,
     discount: 5,
     rating: 4.5,
     isBestSeller: true,
     isOutOfStock: false,
-    categoryName: "Fertilizers",
+    categoryName: "Fertilizuesit",
     productDetails: {
       Brand: "TrustBasket",
-      Weight: "5000 Grams",
-      Form: "Powder",
-      Volume: "5 Litres",
+      Weight: "5000 Gram",
+      Form: "Pluhur",
+      Volume: "5 Litra",
     },
-    description: `1. 100% organic
-            2. Improves soil aeration
-            3. Enriches soil with micro-organisms (adding enzymes such as phosphate and cellulose)
-            4. Microbial activity in worm castings is 10 to 20 times higher than in the soil and organic matter that the worm ingests
-            5. Attracts deep-burrowing earthworms already present in the soil.
-            6. Increases the immune system of plants.
-            7. Easy to store and easy to use.`,
+    description: `1. 100% organik
+            2. Përmirëson ajrosjen e tokës
+            3. Pasuron tokën me mikroorganizma (shtim enzimash si fosfate dhe celuloze)
+            4. Aktiviteti mikrobial në mbetjet e krimbave është 10 deri në 20 herë më i lartë se në tokë dhe në materialet organike që konsumon krimbi
+            5. Tërheq krimba të thellë që ndodhen tashmë në tokë.
+            6. Rrit sistemin imunitar të bimëve.
+            7. Lehtë për t’u ruajtur dhe përdorur.`,
   },
   {
     _id: "VhibWhCO",
     title:
-      "TrustBasket Enriched Organic Earth Magic Potting Soil Fertilizer for Plants(5KG)",
-    imgUrl: "https://m.media-amazon.com/images/I/61fUoGkNdHL._AC_UL320_.jpg",
+      "TrustBasket Pleh Organik (5KG)",
+    imgUrl: "	https://m.media-amazon.com/images/I/61fUoGkNdHL._SX679_.jpg",
     price: 950,
     price_old: 1999,
     discount: 52,
     rating: 3.3,
     isBestSeller: true,
     isOutOfStock: false,
-    categoryName: "Fertilizers",
+    categoryName: "Fertilizuesit",
     productDetails: {
       Brand: "TrustBasket",
-      Weight: "5000 Grams",
-      Form: "Granules",
-      Volume: "5 Litres",
+      Weight: "5000 Gram",
+      Form: "Granula",
+      Volume: "5 Litra",
     },
-    description: `Contains microbes which enhance the soil properties
-              Completely organic and does not contain any harmful chemicals
-              Contains micro and macro nutrients. Has good water holding capacity
-              Its antifungal property helps the plants to grow healthy`,
+    description: `Përmban mikrobe që përmirësojnë vetitë e tokës.
+              Plotësisht organike dhe pa kimikate të dëmshme.
+              Përmban mikro dhe makro ushqyes. Ka kapacitet të mirë mbajtjeje të ujit.
+              Veti kundër mykut ndihmon bimët të rriten të shëndetshme.`,
   },
   {
     _id: "w1zV3ayR",
     title:
-      "Fieldstar 8-Litre Plastic Manual Sprayer for spraying fertilizers in Farms.",
-    imgUrl: "https://m.media-amazon.com/images/I/61xnYxYWFsL._AC_UL320_.jpg",
+      "Fieldstar Spërkatës Manual Plastik 8-Litra për Fertilizues në Ferma.",
+    imgUrl: "https://m.media-amazon.com/images/I/61xnYxYWFsL._SL1500_.jpg",
     price: 950,
     price_old: 1999,
     discount: 52,
     rating: 4.8,
     isBestSeller: false,
     isOutOfStock: false,
-    categoryName: "Farming Tools",
+    categoryName: "Mjete Bujqesore",
     productDetails: {
       Brand: "FIELDSTAR",
       Material: "Others",
-      Color: "Green",
+      Color: "Gjelbër",
     },
-    description: `Used for spraying water and pesticides
-          Package Contents: 1 Sprayer
-          8 LITRE TANK
-          BEST QUALITY`,
+    description: `Përdoret për spërkatje uji dhe pesticide.
+          Përmbajtja: 1 Spërkatës.
+          Kapacitet: 8 litra.
+          Cilësi e lartë.`,
   },
   {
     _id: "sP6NCOgs",
     title:
-      "FreshDcart Solar Soil Plant Care New 3 In 1 Water Moisture Soil Sensor.",
+      "FreshDcart Sensor Solar për Kujdesin e Bimëve 3 në 1 për Lagështi dhe Tokë.",
     imgUrl: "https://m.media-amazon.com/images/I/71WLLgqaUCL._AC_UL320_.jpg",
     price: 589,
     price_old: 1010,
@@ -85,42 +85,40 @@ export const products = [
     rating: 3.8,
     isBestSeller: false,
     isOutOfStock: false,
-    categoryName: "Electronic Devices",
+    categoryName: "Pajisjet Teknologjike",
     productDetails: {
       Brand: "FreshDcart",
       Material: "Others",
-      DeviceType: "Electronic",
+      DeviceType: "Pajisje për kujdesin e bimëve",
     },
-    description: `Plant Care New 3 in 1 Hydroponic Plants Soil Moisture PH Light Meter good for agriculture soil testing use
-    Scientifically Accurate: Easy to read water moisture, ph and light levels, promotes healthy plants`,
+    description: `Sensor për lagështi, PH dhe dritë në tokë.
+    Shkencërisht i saktë dhe lehtë për t'u lexuar.
+    Promovon bimë të shëndetshme.`,
   },
   {
     _id: "wxOaYSr5",
-    title: "WOLFGARTEN Steel Multi Star Culti-Weeder without Handle for Farms",
+    title: "WOLFGARTEN Mjet pune pa dorezë për punime në ferma.",
     imgUrl:
-      "https://images-eu.ssl-images-amazon.com/images/I/61f0YRC22oL._AC_UL160_SR160,160_.jpg",
+      "https://m.media-amazon.com/images/I/51HClCrUjyL._SX679_.jpg",
     price: 1270,
     price_old: 2000,
     discount: 37,
     rating: 3.5,
     isBestSeller: false,
     isOutOfStock: false,
-    categoryName: "Farming Tools",
+    categoryName: "Mjete Bujqesore",
     productDetails: {
       brand: "WOLFGARTEN",
-      material: "Steel",
-      Weight: "520 grams",
+      material: "Çelik",
+      Weight: "520 gram",
     },
-    description: `Made In Germany
-      Optional handle choice- 140cm, 150cm, 170cm (To be Purchased Saperatly of your choice)
-      For hoeing, weeding and trenching
-      Ideal for working around broad leaved shrubs and plants
-      Part of the multi-change click system-any handle fits 50 tool heads`,
+    description: `Prodhim gjerman cilësor.
+      Përshtatet me doreza të ndryshme. I përshtatshëm për hapje kanalesh dhe plithosje.`,
   },
   {
     _id: "ZVZzMdoL",
     title:
-      "FULLFILLBUY Farmer Safety Shoes, Paddy shoes, Agriculture Safety Shoes.",
+      "FULLFILLBUY Këpucë Sigurie për Bujqësi (Paddy Shoes)",
     imgUrl: "https://m.media-amazon.com/images/I/31TYpYBcsoL._AC_UL320_.jpg",
     price: 1499,
     price_old: 2000,
@@ -128,26 +126,26 @@ export const products = [
     rating: 2.5,
     isBestSeller: false,
     isOutOfStock: false,
-    categoryName: "Safety Wearables",
+    categoryName: "Veshjet e sigurise",
     productDetails: {
       brand: "FULLFILLBUY",
-      material: "PVC material",
-      Weight: "520 grams",
+      material: "PVC",
+      Weight: "520 gram",
       dimension: "30 x 10 x 25 cm",
     },
-    description: `Sole: Polyvinyl Chloride
-      Closure: Pull On
-      Shoe Width: Wide
-      High quality new PVC material, No recycled material
-      Softness, flexibility, durable and unbreakable
-      Seamless forming, military quality, long wear and no leakage
-      Wear-resisting outsole, anti-slip and shock absorption
-      High quality and easy to clean`,
+    description: `Thonja: Klorur polivinil
+ Mbyllja: Tërhiqe
+ Gjerësia e këpucëve: e gjerë
+ Material i ri PVC me cilësi të lartë, pa material të ricikluar
+ Butësi, fleksibilitet, e qëndrueshme dhe e pathyeshme
+ Formim i qetë, cilësi ushtarake, konsumim i gjatë dhe pa rrjedhje
+ Shollë e jashtme rezistente ndaj konsumit, kundër rrëshqitjes dhe thithjes së goditjeve
+ Cilësi e lartë dhe e lehtë për t'u pastruar`,
   },
   {
     _id: "2nQRAjxP",
     title:
-      "Pick Ur Needs® Prime Metal 100w Rechargeable Waterproof Led Torch Light.",
+      "Pick Ur Needs® 100w Drita Led e rikarikueshme dhe e papërshkueshme nga uji.",
     imgUrl: "https://m.media-amazon.com/images/I/61sXMk18mRL._AC_UL320_.jpg",
     price: 1799,
     price_old: 2695,
@@ -155,25 +153,21 @@ export const products = [
     rating: 4.0,
     isBestSeller: false,
     isOutOfStock: false,
-    categoryName: "Electronic Devices",
+    categoryName: "Pajisjet Teknologjike",
     productDetails: {
       brand: "Pick Ur Needs®",
-      voltage: "120 Volts",
+      voltage: "120 Volt",
       LuminousFlux: "7000 Lumen",
       Battery: "Lithium_ion",
     },
-    description: `Rechargeable LED Flashlight Spotlight Waterproof Handheld Searchlight
-      Easy to hold
-      In your home, outside, in the car… it’s THE flashlight for almost any situation.
-      Thanks to its lightweight and compact size,
-      the Pick Ur Needs Rechargeable Spotlight is designed for a wide variety of heavy-duty uses.
-      Slips easily into backpacks for hunting, fishing, camping, spelunking, hiking, or walking.
-      Can also be stored on a boat, in a camper, or in your automobile`,
+    description: `Llampa LED e rikarikueshme.
+      E përshtatshme për shumë aktivitete: gjueti, peshkim, kamping, etj.
+      Kompakte dhe e lehtë për tu mbajtur.`,
   },
   {
     _id: "VOJG0b5b",
     title:
-      "3M Polycarbonate Safety Goggles for Chemical Splash,Pack of 1,Clear",
+      "Syze sigurie polikarbonate 3M për spërkatje kimike",
     imgUrl: "https://m.media-amazon.com/images/I/51tkdrj3cAL._AC_UL320_.jpg",
     price: 110,
     price_old: 115,
@@ -181,48 +175,46 @@ export const products = [
     rating: 2.1,
     isBestSeller: false,
     isOutOfStock: true,
-    categoryName: "Safety Wearables",
+    categoryName: "Veshjet e sigurise",
     productDetails: {
-      color: "transparent",
-      Weight: "100 grams",
-      Material: "Polycarbonate",
+      color: "transparente",
+      Weight: "100 gram",
+      Material: "Polikarbonat",
       BrandName: "3M",
     },
-    description: `Protects from chemical splashes
-      Polycarbonate frame or lens
-      Wear over prescription lenses, meets ANSI Z87.1-2003
-      4 one-way vents allow ventilation and does not allow splashes to enter
-      colour: clear`,
+    description: `Mbron nga spërkatjet kimike.
+      Përshtatet me syze të rregullta.
+      Përdoret për mbrojtje dhe ajrosje.`,
   },
   {
     _id: "dF0FQvJL",
     title:
-      "Bayer CropScience Confidor Insecticide for Aphids, Whitefly,Control (50ML)",
-    imgUrl: "https://m.media-amazon.com/images/I/41or-q4ie5L._AC_UY218_.jpg",
+      "Insekticidi Confidor për Bimët (50ML)",
+    imgUrl: "	https://upaj.ag/cdn/shop/files/download_3880b790-76e2-4497-b3c6-d87f1b56010a.png?v=1722836900",
     price: 194,
     price_old: 230,
     discount: 16,
     rating: 4.2,
     isBestSeller: false,
     isOutOfStock: true,
-    categoryName: "Pesticides",
+    categoryName: "Pesticidet",
     productDetails: {
       brand: "Bayer CropScience Limited",
       weight: "120 g",
-      Dimensions: "45 x 5 x 149 Millimeters",
+      Dimensions: "45 x 5 x 149 Millimetra",
     },
-    description: `Imidacloprid belongs to chemical class of neonicotinoid insecticides. 
-    It exhibits excellent systemic properties and a significant residual activity.;
-    Imidacloprid has a broad spectrum of activity, particularly against suckinginsects,
-    various species of beetles, some species of flies, leaf miners and termites;
-    Its outstanding biological efficacy, especially its excellent root-systemicproperties,
-    its broad spectrum of activity, good long lasting effect - combinedwith low application rates
-    and good plant compatibility, has made the product the first choice of the farmer;`,
+    description: `Imidacloprid i përket klasës kimike të insekticideve neonikotinoid.
+ Ajo shfaq veti të shkëlqyera sistemike dhe një aktivitet të konsiderueshëm të mbetur.;
+ Imidacloprid ka një spektër të gjerë veprimi, veçanërisht kundër insekteve thithëse,
+ lloje të ndryshme brumbujsh, disa lloje mizash, minatorë gjethesh dhe termitesh;
+ Efikasiteti i tij i jashtëzakonshëm biologjik, veçanërisht vetitë e shkëlqyera të sistemit rrënjësor,
+ Spektri i tij i gjerë i aktivitetit, efekti i mirë afatgjatë - i kombinuar me shkallë të ulët aplikimi
+ dhe përputhshmëria e mirë e bimëve, e ka bërë produktin zgjedhjen e parë të fermerit;`,
   },
   {
     _id: "l07mWMm3",
     title:
-      "Katra Fertilizers Lysorus (1 g+50 ml) Anti-Virus and Bacteria Virucide for Virus Control",
+      "Fertilizues Lysorus për Kontrollin e Viruseve dhe Baktereve (1g+50ml)",
     imgUrl: "https://m.media-amazon.com/images/I/81ZCu2bU-+L._AC_UY218_.jpg",
     price: 499,
     price_old: 650,
@@ -230,23 +222,23 @@ export const products = [
     rating: 2.2,
     isBestSeller: false,
     isOutOfStock: false,
-    categoryName: "Fertilizers",
+    categoryName: "Fertilizuesit",
     productDetails: {
       brand: "Katra Fertilizers",
-      Item_Form: "Powder",
-      Liquid_Volume: "0.05 Litres",
+      Item_Form: "Pluhur",
+      Liquid_Volume: "0.05 Litra",
     },
-    description: `Lysorus (Anti-virus & bacteria) is an multi purpose enzyme which protect plants from bacteria and virus, it is capable of breaking the chemical bonds of the outer cell wall of the bacteria and virus.
-      Lysorus has true activity against bacteria and virus leading to long term protection of crop from bacterial and viral infection.
-      Lysorus is 100% toxic free product. Its uses is environmentally safe.
-      Doses : 1gm lysorus powder + 50 ml activator / acer Method of application :
-      First dissolve 1gm lysorus powder then mix 50 ml Activator into 150 ltr water then spray it on crop of 1 acre.
-      Doses: 1 Pack is Sufficient for 10-time use in 1 Ltr water. Method of Application:-Mix .1gm Powder with 5ml activator(which is already given in the pack) in 1 Ltr. water and spray freely on the plant, Shake well before use.`,
-  },
+    description: `Lysorus (Anti-virus dhe baktere) është një enzimë me shumë qëllime që mbron bimët nga bakteret dhe viruset, është në gjendje të thyejë lidhjet kimike të murit të jashtëm qelizor të baktereve dhe viruseve.
+ Lysorus ka një aktivitet të vërtetë kundër baktereve dhe viruseve që çon në mbrojtjen afatgjatë të të korrave nga infeksionet bakteriale dhe virale.
+ Lysorus është produkt 100% pa toksikë. Përdorimi i tij është i sigurt për mjedisin.
+ Dozat: 1gm pluhur lisorus + 50 ml aktivizues/acer Mënyra e aplikimit:
+ Fillimisht shpërndani 1 gm pluhur lisorus, më pas përzieni 50 ml Activator në 150 litra ujë dhe më pas spërkateni në të korrat prej 1 acre.
+ Dozat: 1 pako është e mjaftueshme për përdorim 10 herë në 1 litër ujë. Mënyra e aplikimit:-Përzieni .1gm pluhur me aktivizues 5ml (i cili është dhënë tashmë në paketim) në 1 Ltr. ujë dhe spërkatni lirisht bimën, tundeni mirë para përdorimit.`,
+},
   {
     _id: "hKRD5d0S",
     title:
-      "GREEN WORLD Hybrid Bajra/Pearl Millet Seeds For Farming Or Agriculture (1/2 Kg Seeds)",
+      "Farërat Hibrid Bajra/Pearl për Bujqësi (1/2 Kg Farë)",
     imgUrl: "https://m.media-amazon.com/images/I/51nvZ2K9eEL._AC_UL320_.jpg",
     price: 199,
     price_old: 299,
@@ -254,18 +246,22 @@ export const products = [
     rating: 3.2,
     isBestSeller: false,
     isOutOfStock: false,
-    categoryName: "Seeds",
+    categoryName: "Fara",
     productDetails: {
       brand: "Green World",
-      Colour: "Green",
-      Item_Weight: "500 Grams",
-      Special_Feature: "Drought Tolerant",
+      Colour: "Gjelbër",
+      Item_Weight: "500 Gram",
+      Special_Feature: "Tolerante ndaj thatësirës",
     },
-    description: `GREEN WORLD Hybrid Bajra/Pearl Millet Seeds For Farming Or Agriculture (1/2 Kg Seeds)`,
+    description: `Eshtë një lloj fare për kultivimin e bajrës (mënyra alternative e quajtur "millet" në anglisht), një bimë e rëndësishme për ushqimin e njerëzve dhe kafshëve. Bajra është një kulturë bujqësore që përdoret kryesisht për prodhimin e grurit dhe është një burim i rëndësishëm ushqimi, sidomos në rajonet e thata dhe të nxehta.
+
+Ky produkt është farë hibride, që do të thotë se është krijuar për të qenë më i qëndrueshëm dhe me rendiment të lartë krahasuar me varietete të tjera tradicionale. Bajra është e pasur me vitamina dhe minerale dhe përdoret si grurë për gatim, si dhe në ushqimin e kafshëve.
+
+Ky produkt mund të jetë ideal për bujqësinë dhe agrikulturën, duke ofruar mundësi për të rritur një kulturë që ka kërkesa të ulëta për ujë dhe mund të rritet në kushte të ndryshme klimaterike.`,
   },
   {
     _id: "s3QBAf2P",
-    title: "ONLY FOR ORGANIC UV Stabilized Plastic Shade Net, 3x10m (Green)",
+    title: "Rrjete plastike për mbrojtjen e bimëve nga dielli i fortë dhe për krijimin e kushteve të favorshme për rritjen e bimëve",
     imgUrl: "https://m.media-amazon.com/images/I/91vmzczsk3L._AC_UL320_.jpg",
     price: 1199,
     price_old: 2100,
@@ -273,17 +269,20 @@ export const products = [
     rating: 4.2,
     isBestSeller: false,
     isOutOfStock: false,
-    categoryName: "Farming Tools",
+    categoryName: "Mjete Bujqesore",
     productDetails: {
       brand: "ONLY FOR ORGANIC",
       Weight: "420 g",
-      dimensions: "28.5 x 19.4 x 8.3 cm; 420 Grams",
+      dimensions: "28.5 x 19.4 x 8.3 cm; 420 Gram",
     },
-    description: `UV Stabilized Agro-Shade Nets - 50% Dimension :Width : 3 Meter Length : As per Your requirement (Upto 50 meter per roll). This nets are U.V. stabilized with higher degree of stabilization to prevent nets from degradation by Ultra violet ray of sun and thus they last longer than others. Â· It helps in controlling temperature. light, water and moisture of nature as per requirement resulting in best output and quality of crop Â· 
-    Green Shade Net protects the crop against the infrared (I.R.) and Ultraviolet Rays (U.V.).
-    Protects the crop against the heavy rain and air Â· 
-    Green house enables the farmer to best utilize the waste land and increase the cultivation area for increasing the output Â· With green net even small piece of land can yield in high output Â· 
-    The level of Carbon dioxide remains high in green house which increases the photosynthesis process and results in higher yield of the crop cultivated Â· With green house the environment of the crop can be controlled resulting in healthy crop with better quality and better yield
-    `,
+    description: `Ky lloj rrjeti ka disa karakteristika të rëndësishme:
+
+UV Stabilized: Do të thotë se materiali është trajtuar për të rezistuar ndaj rrezatimit ultraviolet (UV), që është një faktor i rëndësishëm për zgjedhjen e materialeve që do të përdoren në natyrë. Trajtimi UV ndihmon në shmangien e shkatërrimit të materialit nga dielli dhe e bën atë më të qëndrueshëm gjatë përdorimit të gjatë në kushte të nxehta.
+
+Shade Net: Ky rrjet krijon hijë dhe redukton dritën direkte të diellit, duke mbrojtur bimët nga dëmtimi që mund të shkaktohet nga rrezet e forta të diellit, sidomos gjatë sezonit të verës. Ky lloj rrjeti përdoret për të krijuar kushte optimale për rritjen e bimëve që kërkojnë më shumë hijë, si domate, kastraveca, apo bimë të tjera bujqësore.
+
+Madhësia 3x10m: Ky dimension tregon që rrjeti ka një gjatësi prej 10 metrash dhe një gjerësi prej 3 metrash, duke e bërë të përshtatshëm për zona më të mëdha të mbulimit.
+
+Ky produkt është ideal për fermerët që përdorin metoda organike të bujqësisë dhe që kërkojnë mbrojtje për bimët e tyre pa përdorur pesticide ose kimikate të dëmshme.`,
   },
 ];
