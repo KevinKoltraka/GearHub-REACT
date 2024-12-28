@@ -22,8 +22,8 @@ export const MyProfile = () => {
               <div className="avatar avatar-lg align-center">
                 <img
                   className="img-round"
-                  src="https://res.cloudinary.com/dvuh4fz9d/image/upload/v1652893486/irene-strong-v2aKnjMbP_k-unsplash_frd8hv.jpg"
-                  alt="avatar-sample-image-large"
+                  src=""
+                  alt="Profile Photo"
                 />
               </div>
 

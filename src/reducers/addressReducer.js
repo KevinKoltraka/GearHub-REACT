@@ -2,15 +2,14 @@ import { v4 as uuid } from "uuid";
 
 const defaultAddress = {
   id: uuid(),
-  name: "Kedar Kulkarni",
-  flatName: "1103/B, Gopal House",
-  area: "Area 1",
+  name: "Kevin Koltraka",
+  flatName: "",
+  area: "",
   landmark: "Near Maharaj Bhavan",
-  city: "Mumbai",
+  city: "Tirane",
   pincode: "4000072",
-  state: "Maharashtra",
-  country: "India",
-  contact: "9898989898",
+  state: "Albania",
+  contact: "355688172927",
 };
 
 export const addressInitialState = {

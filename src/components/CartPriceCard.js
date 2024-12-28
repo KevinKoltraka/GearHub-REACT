@@ -100,12 +100,12 @@ export const CartPriceCard = () => {
           <p className="para-md">- ALL{totalOldPrice() - totalPrice()}</p>
         </div>
         <div className="delivery-charges price-item align-center mg-xsm fw-bold">
-          <h4>Tarifa e dorëzimit</h4>
+          <h4>Delivery Charge</h4>
           <p className="para-md">ALL{deliveryCharge()}</p>
         </div>
         <hr />
         <div className="total-amount price-item flex align-center mg-xsm">
-          <h4>Shuma Totale</h4>
+          <h4>Total Amount</h4>
           <p className="para-md">ALL{totalPrice() + deliveryCharge()}</p>
         </div>
         <hr />
@@ -114,7 +114,7 @@ export const CartPriceCard = () => {
           You will save ALL{totalOldPrice() - totalPrice()} on this order
         </p>
         <p className="note-free-delivery fw-bold mg-xsm">
-          Transporti FALAS në shtëpi për porositë mbi 500 lekë
+          FREE Home Delivery on orders above ALL500
         </p>
 
         {location.pathname == "/cart" ? (
@@ -122,14 +122,14 @@ export const CartPriceCard = () => {
             to="/checkout"
             className="btn btn-solid fw-bold btn-place-order align-center"
           >
-            PROÇEDO ME CHECKOUTIN
+            PROCEED TO CHECKOUT
           </Link>
         ) : (
           <a
             className="btn btn-solid fw-bold btn-place-order align-center btn-payment"
             onClick={handlePayment}
           >
-            PROÇEDO ME PAGESEN
+            PROCEED TO PAYMENT
           </a>
         )}
       </div>
