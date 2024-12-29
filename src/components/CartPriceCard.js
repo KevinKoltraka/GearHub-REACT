@@ -4,12 +4,13 @@ import { toast } from "react-toastify";
 import { useAddress } from "../context/address-context";
 import { clearCart } from "../services/cartServices";
 import { useAuth } from "../context/auth-context";
+import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 
 export const CartPriceCard = () => {
   const { cartState } = useCart();
   const location = useLocation();
   const navigate = useNavigate();
-  const { addressState } = useAddress();
+  const { addressState } = useAddress(); // Now we're using addressState
   const { dispatchCart } = useCart();
   const { auth } = useAuth();
 
@@ -18,73 +19,40 @@ export const CartPriceCard = () => {
     cartState.cartItems.map(
       (item) => (collectPrice = collectPrice + item.price * item.quantity)
     );
+    console.log("Total Price:", collectPrice); // Log total price
     return collectPrice;
   }
+
   function totalOldPrice() {
     let collectOldPrice = 0;
     cartState.cartItems.map(
       (item) =>
         (collectOldPrice = collectOldPrice + item.price_old * item.quantity)
     );
+    console.log("Total Old Price:", collectOldPrice); // Log total old price
     return collectOldPrice;
   }
 
-  const deliveryCharge = () => (totalPrice() > 499 ? 0 : 100);
-
-  const loadScript = () => {
-    return new Promise((resolve) => {
-      const script = document.createElement("script");
-      script.src = "https://checkout.razorpay.com/v1/checkout.js";
-      script.onload = () => {
-        resolve(true);
-      };
-      script.onerror = () => {
-        resolve(false);
-      };
-      document.body.appendChild(script);
-    });
+  const deliveryCharge = () => {
+    const charge = totalPrice() > 499 ? 0 : 100;
+    console.log("Delivery Charge:", charge); // Log delivery charge
+    return charge;
   };
 
-  const handlePayment = async () => {
-    if (addressState.addressList.length > 0 && addressState.addressSelectedId) {
-      const res = await loadScript();
-      if (!res) {
-        toast.error("Razorpay SDK failed to load");
-      }
-
-      const options = {
-        key: process.env.REACT_APP_RAZORPAY_KEY_ID,
-        amount: (totalPrice() + deliveryCharge()) * 100,
-        currency: "INR",
-        name: "AgroStores",
-        description: "Test Transaction",
-        image: "",
-        handler: async (response) => {
-          clearCart({ auth, dispatchCart });
-          toast.success("The payment was successfull");
-          navigate(`/order-success/${response.razorpay_payment_id}`);
-        },
-        prefill: {
-          name: "Kedar Kulkarni",
-          email: "kedar@gmail.com",
-          contact: "9999999998",
-        },
-        notes: {
-          address: "AgroStores Corporate Office",
-        },
-        theme: {
-          color: "#00d68b",
-        },
-      };
-
-      const razorpayGateway = new window.Razorpay(options);
-      razorpayGateway.open();
-    } else {
-      addressState.addressList.length == 0
-        ? toast.error("Please Add address")
-        : toast.error("Please Select Delivery Address");
-    }
+  const handlePaymentSuccess = (details) => {
+    console.log("Payment Successful:", details); // Log payment success
+    clearCart({ auth, dispatchCart });
+    toast.success(`Payment successful! Transaction ID: ${details.id}`);
+    navigate(`/order-success/${details.id}`);
   };
+
+  const handlePaymentError = () => {
+    console.log("Payment Failed"); // Log payment failure
+    toast.error("Payment failed. Please try again.");
+  };
+
+  const amount = totalPrice() + deliveryCharge();
+  console.log("Amount to Pay:", amount); // Log the total amount to be paid
 
   return (
     <>
@@ -127,11 +95,46 @@ export const CartPriceCard = () => {
         ) : (
           <a
             className="btn btn-solid fw-bold btn-place-order align-center btn-payment"
-            onClick={handlePayment}
+            onClick={() => {
+              if (!addressState.addressSelectedId) {
+                toast.error("Please select a delivery address.");
+              }
+            }}
           >
             PROCEED TO PAYMENT
           </a>
         )}
+
+        {/* PayPal Payment Button */}
+        <PayPalScriptProvider
+          options={{
+            "client-id": process.env.REACT_APP_PAYPAL_CLIENT_ID,
+            currency: "USD", // Set your desired currency
+          }}
+        >
+          <PayPalButtons
+            style={{ layout: "vertical" }}
+            createOrder={(data, actions) => {
+              console.log("Creating PayPal Order"); // Log when order is created
+              return actions.order.create({
+                purchase_units: [
+                  {
+                    amount: {
+                      value: amount.toFixed(2), // Ensure amount is formatted properly
+                    },
+                  },
+                ],
+              });
+            }}
+            onApprove={(data, actions) => {
+              console.log("Order Approved:", data); // Log when order is approved
+              return actions.order
+                .capture()
+                .then((details) => handlePaymentSuccess(details));
+            }}
+            onError={() => handlePaymentError()}
+          />
+        </PayPalScriptProvider>
       </div>
     </>
   );
