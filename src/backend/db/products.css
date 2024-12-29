@@ -1,0 +1,6 @@
+.card-img {
+    height: 100%;
+    width: 85%;
+    object-fit: fit;
+    mix-blend-mode: multiply;
+}
