@@ -71,4 +71,3 @@ React Toastify: For alert notifications.
 Paypal: Test payments integration.
 Issues & Suggestions
 If you encounter any issues or have suggestions, feel free to raise them via the GitHub repository. You can also send your feedback or suggestions via email.
-
