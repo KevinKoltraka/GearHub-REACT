@@ -1,7 +1,7 @@
-AgroStores
+AgroStore
 
 
-🌱 AgroStores 🛒
+🌱 AgroStore 🛒
 An E-Commerce App for Buying Agro-Products.
 
 About AgroStores
@@ -27,7 +27,7 @@ Home Page
 Public page with a navigation bar, header image, and product categories. Users can view products, filter by categories, and add to the cart or wishlist.
 
 Products Listing Page
-Users can filter products by price range (₹200 to ₹2000), product category, ratings, and sort by price. Products can be added to both wishlist and cart.
+Users can filter products by price range, product category, ratings, and sort by price. Products can be added to both wishlist and cart.
 
 Single Product Page
 Provides detailed product descriptions. Users can add products to cart or wishlist directly.
@@ -68,20 +68,7 @@ Netlify: For deployment.
 Cloudinary: For hosting images.
 Flaticon: For colorful icons.
 React Toastify: For alert notifications.
-Razorpay: Test payments integration.
+Paypal: Test payments integration.
 Issues & Suggestions
 If you encounter any issues or have suggestions, feel free to raise them via the GitHub repository. You can also send your feedback or suggestions via email.
 
-Connect with Me:
-You can reach out to me via the following platforms:
-
-Gmail
-
-
-LinkedIn
-
-
-Hashnode
-
-
-Twitter
