@@ -7,7 +7,8 @@ import { Cart } from "../pages/Cart";
 import { WishList } from "../pages/WishList";
 import { RequiresAuth } from "./RequiresAuth";
 import Mockman from "mockman-js";
-
+import AboutUs from "../components/AboutUs"; 
+import Services from "../components/Services";
 import { Routes, Route } from "react-router-dom";
 import { SingleProductPage } from "../pages/SingleProductPage";
 import { Checkout } from "../pages/Checkout";
@@ -28,15 +29,13 @@ export const PageRoutes = () => {
       <Route path="/search" element={<SearchPage />} />
       <Route path="*" element={<ErrorPage />} />
       <Route path="/product/:productId" element={<SingleProductPage />} />
-
+      <Route path="/about" element={<AboutUs />} />
+      <Route path="/services" element={<Services />} />
       <Route element={<RequiresAuth />}>
         <Route path="/cart" element={<Cart />} />
         <Route path="/wishlist" element={<WishList />} />
         <Route path="/profile" element={<MyProfile />} />
-        <Route
-          path="/order-success/:paymentId"
-          element={<OrderSuccessPage />}
-        />
+        <Route path="/order-success/:paymentId" element={<OrderSuccessPage />} />
       </Route>
       <Route path="/mock" element={<Mockman />} />
     </Routes>
