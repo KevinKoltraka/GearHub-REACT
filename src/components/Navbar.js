@@ -38,13 +38,13 @@ export const Navbar = ({ setSearchQuery }) => {
         </i>
         <div className="nav-mobile-brand fs-md">
           <Link to="/">
-            UBT<span className="dark-brown-color">AgroMarket</span>
+            Gear<span className="black-color">Hub</span>
           </Link>
         </div>
       </div>
       <div className="nav-brand fs-lg">
         <Link to="/">
-        UBT<span className="dark-brown-color">AgroMarket</span>
+        Gear<span className="black-color">Hub</span>
         </Link>
       </div>
       {/* <SearchBar /> */}

@@ -10,7 +10,7 @@ export const CartPriceCard = () => {
   const { cartState } = useCart();
   const location = useLocation();
   const navigate = useNavigate();
-  const { addressState } = useAddress(); // Now we're using addressState
+  const { addressState } = useAddress();
   const { dispatchCart } = useCart();
   const { auth } = useAuth();
 

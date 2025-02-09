@@ -8,41 +8,41 @@ import { v4 as uuid } from "uuid";
 export const categories = [
   {
     _id: uuid(),
-    categoryName: "Fertilizuesit",
-    description:"a natural or chemical substance that is put on land or soil to make plants grow better",
-    imgSrc:"https://res.cloudinary.com/dvuh4fz9d/image/upload/v1648390941/fertilizers1_hdthei.jpg",
+    categoryName: "Sedans",
+    description:"Comfortable, practical cars ideal for families and commuting.",
+    imgSrc:"/sedan.jpg",
   },
   {
     _id: uuid(),
-    categoryName: "Pesticidet",
+    categoryName: "SUVs",
     description:
-      "a chemical substance that is used for killing bugs especially insects, that eat food crops",
-      imgSrc:"https://res.cloudinary.com/dvuh4fz9d/image/upload/v1648390940/pesticides1_pveijq.jpg",
+      "Spacious vehicles with versatility, perfect for both city driving and outdoor adventures.",
+      imgSrc:"/suv.jpg",
   },
   {
     _id: uuid(),
-    categoryName: "Mjete Bujqesore",
+    categoryName: "Coupes",
     description:
-      "Agricultural tools are instruments that are used in the fields to aid in the agricultural process.",
-      imgSrc:"https://res.cloudinary.com/dvuh4fz9d/image/upload/v1648390940/tools_emqkuu.jpg",
+      "Sleek, sporty two-door cars that emphasize style and performance, often with a more dynamic driving experience",
+      imgSrc:"coupe.jpg",
   },
   {
     _id: uuid(),
-    categoryName: "Fara",
+    categoryName: "Engine Components",
     description:
-      "Vegetables & Fruits Seeds",
-      imgSrc:"https://res.cloudinary.com/dvuh4fz9d/image/upload/v1648390941/seeds_tqx9ub.jpg",
+      "Includes the engine block, pistons, crankshaft, camshaft, and timing belt—key elements for the engine's performance and functionality.",
+      imgSrc:"engine.jpg",
   },
   {
     _id: uuid(),
-    categoryName: "Veshjet e sigurise",
-    description: "Safety Wearables such as shoes, gloves etc",
-     imgSrc:"https://res.cloudinary.com/dvuh4fz9d/image/upload/v1648395553/farmer-spraying-rice_720x480_p9nhyb.webp",
+    categoryName: "Suspension and Steering",
+    description: "Parts like shocks, struts, control arms, and steering racks that ensure stability, comfort, and precise handling of the vehicle",
+     imgSrc:"susandsteering.jpg",
   },
   {
     _id: uuid(),
-    categoryName: "Pajisjet Teknologjike",
-    description:"Sensors, testers, torch & gadgets for farming",
-     imgSrc:"https://res.cloudinary.com/dvuh4fz9d/image/upload/v1648397135/probeInSoil_1_cropped_s81abe.jpg",
+    categoryName: "Braking System",
+    description:"Comprises parts such as brake pads, rotors, calipers, and brake fluid, crucial for safe and efficient stopping power.",
+     imgSrc:"braking.png",
   },
 ];

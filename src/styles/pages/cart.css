@@ -11,6 +11,18 @@
   color: var(--primary);
 }
 
+.card-badge-green {
+  background-color: black;
+}
+
+.card-ratings {
+  background-color: black;
+}
+
+.card .btn {
+  background-color: black;
+}
+
 .cart-container-main {
   flex-wrap: wrap;
   width: 100%;

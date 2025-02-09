@@ -13,16 +13,13 @@ export const Home = () => {
                 <header className="hero-header">
                     <div className="header-content flex-column-center">
                         <h1 className="banner-title lt-sp-2 mg-top-md text-center">
-                            Zgjidhje për nevojat tuaja bujqësore
+                            Where Performance Meets Passion
                         </h1>
-                        <h2 className="banner-subtitle lt-sp-1 text-center">
-                            Blini fertilizues, insekticide, fara dhe produkte të tjera bujqësore
-                        </h2>
                         <Link
                             to="/products"
                             className="btn btn-solid btn-shop-now mg-lg btn-grad"
                         >
-                            Bli Tani
+                            Shop Now
                         </Link>
                     </div>
                 </header>

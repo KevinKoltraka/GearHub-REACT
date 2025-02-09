@@ -1,3 +1,17 @@
+.go-home-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.go-home-button:hover {
+  background-color: #0056b3;
+}
+
 .services-section {
     background-color: #f4f7fb;
     padding: 40px 20px;
@@ -8,11 +22,14 @@
     margin-bottom: 30px;
   }
   
-  .services-header h2 {
+  .services-header h2 a {
     font-size: 32px;
     font-weight: bold;
     color: #2d3748;
+    text-decoration: none;
   }
+
+
   
   .services-header p {
     font-size: 18px;

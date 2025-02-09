@@ -89,8 +89,8 @@ export const ProductCard = ({ cardDetails }) => {
           {rating} <i className="material-icons">star</i>
         </p>
         <div className="card-pricing">
-          <p className="card-price">ALL{price}</p>
-          <p className="card-price-cut">ALL{price_old}</p>
+          <p className="card-price">€{price}</p>
+          <p className="card-price-cut">€{price_old}</p>
           <p className="card-percent-discount">{discount}% off</p>
         </div>
 

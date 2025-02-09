@@ -20,9 +20,10 @@
   margin-bottom: 10rem;
 }
 .single-product-page .product-img {
-  width: 25rem;
-  height: 25rem;
+  width: 50rem;
+  height: auto;
 }
+
 
 .single-product-page .card-ratings {
   width: 3.8rem;

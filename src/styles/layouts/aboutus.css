@@ -6,6 +6,34 @@
   color: #333;
 }
 
+.go-home-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.go-home-button:hover {
+  background-color: #0056b3;
+}
+
+/* Positioning the top button */
+.top-button {
+  position: absolute;
+  top: 30px;
+  right: 250px;
+}
+
+/* Positioning the bottom button */
+.bottom-button {
+  bottom: 20px;
+  right: 20px;
+}
+
 /* General Section Styles */
 .about-section {
   max-width: 1200px;
@@ -18,7 +46,7 @@ h2 {
   font-size: 2.5em;
   font-weight: bold;
   margin-bottom: 20px;
-  color: #2c3e50;
+  color: #000000;
 }
 
 /* Paragraph Styling */
@@ -30,7 +58,7 @@ p {
 }
 
 strong {
-  color: #1abc9c;
+  color: #000000;
 }
 
 .about-content {
@@ -58,7 +86,7 @@ strong {
 
 .about-text h3 {
   font-size: 1.8em;
-  color: #1abc9c;
+  color: #000000;
   margin-bottom: 15px;
   font-weight: 600;
 }
@@ -76,7 +104,7 @@ strong {
 }
 
 .about-text ul li strong {
-  color: #1abc9c;
+  color: #000000;
 }
 
 /* Responsiveness */

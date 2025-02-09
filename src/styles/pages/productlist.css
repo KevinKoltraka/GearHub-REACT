@@ -10,24 +10,24 @@
 
 /* Filters-Sidebar */
 .filters-sidebar {
-  background-color: var(--tree-green);
+  background-color: aliceblue;
   border-radius: 5px;
   width: 20rem;
   height: fit-content;
 }
 .filters-sidebar a {
-  color: var(--black);
+  color: black;
 }
 .filter-clear-btn {
   cursor: pointer;
 }
 .filter-clear-btn:hover {
   text-decoration: underline;
-  color: var(--white);
+  color: black;
 }
 
 .filters-sidebar input {
-  accent-color: var(--primary);
+  accent-color: black;
 }
 
 input[type="checkbox"],
@@ -42,6 +42,7 @@ input[type="radio"] {
 }
 .filters-sidebar label {
   cursor: pointer;
+  color: black;
 }
 .filter-title,
 .filter-price {

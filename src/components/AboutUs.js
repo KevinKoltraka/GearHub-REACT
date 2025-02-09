@@ -1,72 +1,90 @@
+import { useNavigate } from 'react-router-dom';
 import "../styles/layouts/aboutus.css";
 
 const AboutUs = () => {
+  const navigate = useNavigate(); // Use useNavigate hook
+
+  // Handle "Go Home" button click
+  const goHome = () => {
+    navigate("/"); // Navigate to home page
+  };
+
   return (
     <section id="about" className="about-section">
-      <h2>Rreth Nesh</h2>
+      {/* Top Go Home Button */}
+      <button onClick={goHome} className="go-home-button top-button">
+        Go Home
+      </button>
+
+      <h2>About Us</h2>
       <p>
-        Mirësevini në <strong>UBT AgroMarket</strong>, ku jemi të angazhuar për fuqizimin e komunitetit bujqësor duke ofruar produkte bujqësore cilësore, të besueshme dhe të qëndrueshme. Si një nga platformat kryesore të e-komercit në bujqësi, ne përpiqemi të lidhim hendekun midis teknologjisë moderne dhe bujqësisë tradicionale, duke bërë më të lehtë për fermerët të aksesojnë mjetet, pajisjet dhe burimet që u nevojiten për të pasur sukses.
+        Welcome to <strong>GearHub</strong>, where we are dedicated to empowering the automotive community by offering high-quality, reliable, and durable car parts. As one of the leading e-commerce platforms for automotive enthusiasts, we bridge the gap between modern technology and the car industry, making it easier for drivers, mechanics, and car owners to access the tools, parts, and resources they need to succeed.
       </p>
 
       <div className="about-content">
         <div className="about-text">
-          <h3>Vizioni Ynë</h3>
+          <h3>Our Vision</h3>
           <p>
-            Vizioni ynë është të jemi lider global në inovacionin bujqësor, duke ndihmuar në transformimin e peizazhit bujqësor në mbarë botën. Ne synojmë të revolucionarizojmë industrinë e bujqësisë duke ofruar zgjidhje moderne që janë të aksesueshme, të përballueshme dhe efektive. Qëllimi ynë është të mundësojmë që fermerët të arrijnë produktivitet më të madh, qëndrueshmëri dhe sukses përmes përdorimit të produkteve dhe teknologjive bujqësore moderne.
+            Our vision is to be a global leader in automotive innovation, helping transform the car industry worldwide. We aim to revolutionize the automotive sector by offering solutions that are accessible, affordable, and efficient. Our goal is to enable car enthusiasts and professionals to achieve greater performance, safety, and longevity through the use of top-tier automotive products and cutting-edge technology.
           </p>
         </div>
 
         <div className="about-text">
-          <h3>Misioni Ynë</h3>
+          <h3>Our Mission</h3>
           <p>
-            Në <strong>UBT AgroMarket</strong>, misioni ynë është i qartë: të ofrojmë për fermerët mjetet, pajisjet dhe mbështetje nga më të mirat për të përmirësuar praktikat dhe jetesën e tyre. Ne jemi të pasionuar për bujqësinë e qëndrueshme dhe angazhohemi për t&apos;u siguruar që fermerët në mbarë botën të kenë akses në produktet më cilësore dhe burimet edukative që promovojnë praktika bujqësore të shëndetshme, të qëndrueshme dhe ekologjike.
+            At <strong>GearHub</strong>, our mission is clear: to provide car owners, mechanics, and enthusiasts with the best tools, parts, and support to improve their vehicles and driving experiences. We are passionate about promoting sustainable automotive practices and are committed to ensuring that our customers worldwide have access to the highest quality products and educational resources that promote safe, efficient, and eco-friendly driving.
           </p>
           <p>
-            Ne besojmë se e ardhmja e bujqësisë varet nga inovacioni, qëndrueshmëria dhe bashkëpunimi në komunitet. Duke partnerizuar me fermerët lokalë, ekspertë bujqësorë dhe liderë të industrisë, ne vazhdimisht rafinojmë ofertat tona dhe zhvillojmë zgjidhje që adresojnë nevojat në rritje të komunitetit global të bujqësisë.
+            We believe that the future of the automotive industry lies in innovation, sustainability, and community collaboration. By partnering with local mechanics, car experts, and industry leaders, we continuously refine our offerings and develop solutions that address the growing needs of the global automotive community.
           </p>
         </div>
 
         <div className="about-text">
-          <h3>Vlerat Tonë Themelore</h3>
+          <h3>Our Core Values</h3>
           <ul>
-            <li><strong>Integriteti:</strong> Ne veprojmë me standardet më të larta etike, duke siguruar transparencë, ndershmëri dhe drejtësi në çdo transaksion.</li>
-            <li><strong>Qëndrueshmëria:</strong> Jemi thellësisht të angazhuar për promovimin e praktikave bujqësore të qëndrueshme dhe mbrojtjen e mjedisit për brezat e ardhshëm.</li>
-            <li><strong>Inovacioni:</strong> Ne adoptojmë teknologjinë më të avancuar dhe kërkojmë vazhdimisht zgjidhje inovative për të mbështetur nevojat e zhvillueshme të fermerëve.</li>
-            <li><strong>Qendërzim tek Klienti:</strong> Klientët tanë janë në zemër të gjithçkaje që bëjmë. Ne jemi të angazhuar për të ofruar shërbim të shkëlqyer dhe për të krijuar marrëdhënie afatgjata mbi besimin.</li>
-            <li><strong>Bashkëpunimi:</strong> Ne besojmë në fuqinë e partneriteteve, duke punuar ngushtë me komunitetet lokale, furnizuesit dhe ekspertët për të ofruar zgjidhjet më të mira për klientët tanë.</li>
+            <li><strong>Integrity:</strong> We operate with the highest ethical standards, ensuring transparency, honesty, and fairness in every transaction.</li>
+            <li><strong>Sustainability:</strong> We are deeply committed to promoting sustainable automotive practices and protecting the environment for future generations.</li>
+            <li><strong>Innovation:</strong> We embrace the latest technology and constantly seek innovative solutions to support the evolving needs of car owners and professionals.</li>
+            <li><strong>Customer-Centric:</strong> Our customers are at the heart of everything we do. We are dedicated to delivering excellent service and building long-term relationships based on trust.</li>
+            <li><strong>Collaboration:</strong> We believe in the power of partnerships, working closely with local communities, suppliers, and experts to deliver the best solutions for our customers.</li>
           </ul>
         </div>
 
         <div className="about-text">
-          <h3>Historia Jonë</h3>
+          <h3>Our History</h3>
           <p>
-            E themeluar në vitin 2010, UBT AgroMarket filloi me një mision të thjeshtë por ambicioz: të ofrojë për fermerët mjetet dhe burimet që u duhen për të pasur sukses në një botë që po ndryshon me shpejtësi. Gjatë viteve, ne u rritëm dhe u bëmë një partner i besuar për fermerët në mbarë botën, duke ofruar akses në produkte cilësore dhe mbështetje të personalizuar. Udhëtimi ynë është formuar nga një kuptim i thellë i sfidave me të cilat përballen fermerët dhe një ndjekje të pandalshme të zgjidhjeve që i fuqizojnë ata.
+            Founded in 2015, GearHub started with a simple yet ambitious mission: to provide car owners and professionals with the tools and resources they need to succeed in a rapidly changing automotive world. Over the years, we have grown and become a trusted partner for car enthusiasts worldwide, offering access to quality parts and personalized support. Our journey has been shaped by a deep understanding of the challenges car owners face and an unwavering pursuit of solutions that empower them.
           </p>
           <p>
-            Ajo që filloi si një iniciativë lokale e vogël është zhvilluar në një platformë globale me një gamë të gjerë produktesh, duke përfshirë pajisje bujqësore, fara, plehra, sisteme ujitjeje dhe shumë më tepër. Jemi krenarë që kemi krijuar një prani të fortë në tregjet kryesore bujqësore dhe angazhimi ynë për ekselencë vazhdon të na shtyjë në zgjerimin e rajoneve dhe kategorive të reja të produkteve.
-          </p>
-        </div>
-
-        <div className="about-text">
-          <h3>Angazhimi Ynë për Qëndrueshmërinë</h3>
-          <p>
-            Si një kompani që kupton rëndësinë kritike të praktikave bujqësore të qëndrueshme, ne jemi të angazhuar për të minimizuar gjurmën tonë mjedisore. Duke ofruar produkte ekologjike dhe duke mbështetur teknikat e bujqësisë rinovuese, ne përpiqemi të krijojmë një ndikim pozitiv në planetin tonë. Ne punojmë me fermerët për të promovuar praktika të qëndrueshme që jo vetëm që përmirësojnë të korrat, por gjithashtu ndihmojnë në ruajtjen e tokës për brezat e ardhshëm.
-          </p>
-          <p>
-            Nëpërmjet partneriteteve me organizata kryesore të fokusuar në qëndrueshmëri, ne marrim pjesë aktive në iniciativa që promovojnë shëndetin e tokës, ruajtjen e ujit, biodiversitetin dhe reduktimin e përdorimit të kimikateve në bujqësi. Ne besojmë se bujqësia e qëndrueshme nuk është vetëm një model biznesi—është një përgjegjësi që e marrim seriozisht.
+            What began as a small local initiative has now evolved into a global platform with a wide range of products, including automotive parts, tools, performance upgrades, and much more. We are proud to have established a strong presence in major automotive markets, and our commitment to excellence continues to drive us in expanding into new regions and product categories.
           </p>
         </div>
 
         <div className="about-text">
-          <h3>Njihuni me Ekipin Tonë</h3>
+          <h3>Our Commitment to Sustainability</h3>
           <p>
-            Në UBT AgroMarket, jemi krenarë që kemi një ekip të dedikuar dhe pasionant profesionistësh që ndajnë një qëllim të përbashkët: mbështetje dhe ngritje të komunitetit bujqësor. Ekipi ynë përbëhet nga ekspertë bujqësorë, inxhinierë, specialistë të shërbimit ndaj klientëve dhe profesionistë të logjistikës që punojnë pa u lodhur për të ofruar produktet dhe shërbimet më të mira për klientët tanë. Me aftësitë e tyre të ndryshme dhe angazhimin e palëkundur për ekselencë, ekipi ynë luan një rol kyç në suksesin dhe rritjen e kompanisë.
+            As a company that understands the critical importance of sustainable automotive practices, we are committed to minimizing our environmental footprint. By offering eco-friendly products and supporting green automotive technologies, we aim to create a positive impact on our planet. We work with car owners and mechanics to promote practices that not only improve vehicle performance but also help preserve natural resources for future generations.
           </p>
           <p>
-            Nga ekipi ynë i menaxhimit deri tek përfaqësuesit e shërbimit ndaj klientëve, çdo anëtar i UBT AgroMarket është i angazhuar për të bërë një ndryshim në jetën e fermerëve. Së bashku, ne jemi të bashkuar nga një vizion i përbashkët për fuqizimin e fermerëve dhe për të favorizuar një të ardhme bujqësore më të qëndrueshme, produktive dhe të pasur.
+            Through partnerships with key sustainability organizations, we actively participate in initiatives that promote fuel efficiency, waste reduction, and environmentally friendly automotive technologies. We believe that sustainable automotive practices are not just a business model—they are a responsibility we take seriously.
+          </p>
+        </div>
+
+        <div className="about-text">
+          <h3>Meet Our Team</h3>
+          <p>
+            At GearHub, we are proud to have a dedicated and passionate team of professionals who share a common goal: to support and uplift the automotive community. Our team consists of automotive experts, engineers, customer service specialists, and logistics professionals who work tirelessly to deliver the best products and services to our customers. With their diverse skills and unwavering commitment to excellence, our team plays a key role in the success and growth of the company.
+          </p>
+          <p>
+            From our management team to our customer service representatives, every member of GearHub is dedicated to making a difference in the lives of car owners. Together, we are united by a shared vision to empower automotive enthusiasts and foster a more sustainable, productive, and prosperous automotive future.
           </p>
         </div>
       </div>
+
+      {/* Bottom Go Home Button */}
+      <button onClick={goHome} className="go-home-button bottom-button">
+        Go Home
+      </button>
     </section>
   );
 };

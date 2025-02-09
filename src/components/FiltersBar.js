@@ -51,15 +51,15 @@ export const FiltersBar = () => {
         </div>
 
         <div className="filter-price flex">
-          <span id="price-min">200</span>
-          <span id="price-mid">100100</span>
-          <span id="price-max">200000</span>
+          <span id="price-min">0</span>
+          <span id="price-mid">100000</span>
+          <span id="price-max">2000000</span>
         </div>
         <input
-          step="200"
+          step="0"
           type="range"
-          min="200"
-          max="200000"
+          min="0"
+          max="2000000"
           value={filterState.maxPriceRange}
           className="price-slider mg-left-xsm"
           id="price-range"

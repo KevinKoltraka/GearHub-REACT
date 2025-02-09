@@ -1,6 +1,6 @@
 nav a {
   text-decoration: none;
-  color: var(--primary);
+  color: black;
 }
 
 nav {
@@ -9,7 +9,7 @@ nav {
   /* align-items: center; */
   justify-content: space-around;
   padding: 0.5rem 0;
-  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  background-image: linear-gradient(120deg, #ffffff 0%, #f0f0f0 100%);
   font-family: var(--acme-font);
 }
 
@@ -46,15 +46,43 @@ nav {
   position: relative;
 } */
 
+
+.btn-solid {
+  background-color: black !important;
+  transition: all 0.3s ease;
+}
+
+.btn-solid:hover {
+  background-color: rgb(255, 255, 255) !important;
+  color: #000000 !important;
+  transform: scale(1.1);
+}
+
+.badge-count {
+  background-color: white;
+  color: black;
+}
+
+.badge-count {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
 .btn-login,
 .btn-logout {
   width: 6rem;
   font-size: 1.1rem;
   padding: 0.5rem 1.75rem;
+  background-color: black;
 }
 .nav-pills i {
   cursor: pointer;
   font-size: 2rem;
+  transition: all 0.3s ease;
+}
+
+.nav-pills i:hover {
+  transform: scale(1.3);
 }
 .mobile-header {
   display: none;
