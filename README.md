@@ -1,19 +1,5 @@
-AgroStore
 
-
-🌱 AgroStore 🛒
-An E-Commerce App for Buying Agro-Products.
-
-About AgroStores
-AgroStores is an online platform for purchasing agricultural growth products. We offer a wide range of products such as:
-
-Fertilizers
-Pesticides
-Farming Tools
-Seeds
-Safety Wearables
-Electronic Devices
-Our app also includes features such as:
+The web also includes features such as:
 
 Add products to cart
 Wishlist management
@@ -70,4 +56,3 @@ Flaticon: For colorful icons.
 React Toastify: For alert notifications.
 Paypal: Test payments integration.
 Issues & Suggestions
-If you encounter any issues or have suggestions, feel free to raise them via the GitHub repository. You can also send your feedback or suggestions via email.
